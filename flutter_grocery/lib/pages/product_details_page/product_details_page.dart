@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_grocery/widgets/reusable/product_details_page/price_card.dart';
 import 'package:flutter_grocery/widgets/reusable/product_details_page/title_desc_card.dart';
+import 'package:flutter_grocery/widgets/shared/gradient_button.dart';
 import 'package:flutter_grocery/widgets/shared/notification_card.dart';
 
 class ProductDetailsPage extends StatelessWidget {
@@ -103,6 +104,9 @@ class ProductDetailsPage extends StatelessWidget {
                   ),
                 ],
               ),
+              const SizedBox(height: 40),
+              Center(child: GradientButton()),
+              const SizedBox(height: 20),
             ],
           ),
         ),
