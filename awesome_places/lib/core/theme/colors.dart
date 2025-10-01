@@ -28,7 +28,7 @@ const Color darkCategoryButtonColor = Color(0xff8E8FFA);
 const Color lightCategoryButtonColor = Color(0xffC2D9FF);
 
 // Text Colors
-final Color mainTextColor = const Color(0xff3B3636).withValues(alpha: 0.75);
+final Color primaryTextColor = const Color(0xff3B3636).withValues(alpha: 0.75);
 
 // Card Background Colors
 final Color cardBgColor = const Color(0xffCACACA).withValues(alpha: 0.31);
@@ -36,3 +36,6 @@ final Color cardBgColor = const Color(0xffCACACA).withValues(alpha: 0.31);
 // Add And Remove Button Colors
 const Color addButtonColor = Color(0xff06FFA5);
 const Color removeButtonColor = Color(0xffFF1E0F);
+
+// divider Color
+final Color dividerColor = const Color(0xff000000).withValues(alpha: 0.15);

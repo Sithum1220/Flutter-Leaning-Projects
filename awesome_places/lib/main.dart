@@ -1,4 +1,4 @@
-import 'package:awesome_places/pages/home_page.dart';
+import 'package:awesome_places/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,9 +9,10 @@ class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
   @override
-  Widget build(BuildContext context) {  
+  Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage()
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
