@@ -21,7 +21,7 @@ const Color mainLandmarksColor = Color(0xff0029FF);
 final Color subLandmarksColor = const Color(0xff0029FF).withValues(alpha: 0.53);
 
 const Color mainCulturalColor = Color(0xffC00C00);
-final Color subCulturalColor = const Color(0xffC00C00).withValues(alpha: 0.53);
+const Color subCulturalColor =  Color(0xffFF9900);
 
 // Category Button Colors
 const Color darkCategoryButtonColor = Color(0xff8E8FFA);
