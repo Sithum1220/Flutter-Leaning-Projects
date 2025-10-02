@@ -1,8 +1,8 @@
 import 'package:awesome_places/core/theme/colors.dart';
 import 'package:flutter/material.dart';
 
-class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
+class SubmitButton extends StatelessWidget {
+  const SubmitButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +11,7 @@ class CustomButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: secondaryYellow,
         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+        side: BorderSide(color: black),
       ),
       child: Text(
         "Submit",

@@ -2,7 +2,8 @@ import 'package:awesome_places/core/theme/colors.dart';
 import 'package:flutter/material.dart';
 
 class Input extends StatelessWidget {
-  const Input({super.key});
+  final String placeholder;
+  const Input({super.key, required this.placeholder});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class Input extends StatelessWidget {
         child: TextField(
           decoration: InputDecoration(
             hint: Text(
-              "Enter A Text",
+              placeholder,
               style: TextStyle(color: primaryTextColor, fontSize: 16),
             ),
             border: InputBorder.none,

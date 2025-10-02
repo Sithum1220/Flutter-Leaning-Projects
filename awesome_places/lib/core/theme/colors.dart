@@ -21,7 +21,7 @@ const Color mainLandmarksColor = Color(0xff0029FF);
 final Color subLandmarksColor = const Color(0xff0029FF).withValues(alpha: 0.53);
 
 const Color mainCulturalColor = Color(0xffC00C00);
-const Color subCulturalColor =  Color(0xffFF9900);
+const Color subCulturalColor = Color(0xffFF9900);
 
 // Category Button Colors
 const Color darkCategoryButtonColor = Color(0xff8E8FFA);
@@ -36,6 +36,3 @@ final Color cardBgColor = const Color(0xffCACACA).withValues(alpha: 0.31);
 // Add And Remove Button Colors
 const Color addButtonColor = Color(0xff06FFA5);
 const Color removeButtonColor = Color(0xffFF1E0F);
-
-// divider Color
-final Color dividerColor = const Color(0xff000000).withValues(alpha: 0.15);

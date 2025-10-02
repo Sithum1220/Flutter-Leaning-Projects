@@ -1,6 +1,6 @@
 import 'package:awesome_places/core/constants/app_spacing.dart';
 import 'package:awesome_places/core/theme/colors.dart';
-import 'package:awesome_places/widgets/reusable/custom_button.dart';
+import 'package:awesome_places/widgets/reusable/submit_button.dart';
 import 'package:awesome_places/widgets/reusable/input.dart';
 import 'package:awesome_places/widgets/shared/rating.dart';
 import 'package:flutter/material.dart';
@@ -70,11 +70,11 @@ class CulturalPage extends StatelessWidget {
                 ),
               ),
               AppSpacing.hMd,
-              Input(),
+              Input(placeholder: 'Enter a text'),
               AppSpacing.hLg,
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
-                children: [CustomButton()],
+                children: [SubmitButton()],
               ),
             ],
           ),

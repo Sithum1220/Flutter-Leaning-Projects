@@ -4,7 +4,7 @@ import 'package:awesome_places/pages/landmarks/landmarks_page.dart';
 import 'package:awesome_places/pages/natural_wonders/natural_wonders_page.dart';
 import 'package:awesome_places/core/theme/colors.dart';
 import 'package:awesome_places/pages/nightlife/nightlife_page.dart';
-import 'package:awesome_places/pages/tour_book/tour_book_page.dart';
+import 'package:awesome_places/pages/tour_booking/tour_booking_page.dart';
 import 'package:awesome_places/widgets/reusable/home/category_button.dart';
 import 'package:flutter/material.dart';
 
