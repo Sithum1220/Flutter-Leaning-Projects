@@ -8,6 +8,7 @@ import 'package:workout_planner/data/user_data.dart';
 import 'package:workout_planner/models/equipment_model.dart';
 import 'package:workout_planner/models/exercise_model.dart';
 import 'package:workout_planner/models/user_model.dart';
+import 'package:workout_planner/pages/equipment_details/equipment_details_page.dart';
 import 'package:workout_planner/pages/exercise_details/exercise_details_page.dart';
 import 'package:workout_planner/widgets/exercise_card.dart';
 import 'package:workout_planner/widgets/progress_card.dart';
@@ -98,10 +99,18 @@ class _HomePageState extends State<HomePage> {
                       imageUrl: "assets/images/equipments/dumbbells2.png",
                       description: "See More...",
                       onTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (context) => ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => EquipmentDetailsPage(
+                              equipmentTitle: "Equipment",
+                              description:
+                                  'Welcome to our travel app, your ultimate guide to discovering captivating destinations around the globe! Whether you'
+                                  're seeking the tranquility visit offers something for every traveler.',
+                              equipmentList: equipmentList,
+                            ),
+                          ),
+                        );
                       },
                     ),
                   ],
