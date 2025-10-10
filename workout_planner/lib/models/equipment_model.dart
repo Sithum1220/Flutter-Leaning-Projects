@@ -6,8 +6,8 @@ class EquipmentModel {
   final String equipmentImageUrl;
   final int noOfMinuites;
   final int noOfCalories;
-  final bool isHandOvered;
-  
+  bool isHandOvered;
+
   EquipmentModel({
     required this.id,
     required this.equipmentName,

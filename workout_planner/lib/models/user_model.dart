@@ -60,4 +60,58 @@ class UserModel {
   void removeFavEquipment(EquipmentModel equipment) {
     favEquipmentList.remove(equipment);
   }
+
+  int totalMinutesSpend() {
+    int totalMinutesSpend = 0;
+
+    for (var exercise in exerciseList) {
+      totalMinutesSpend += exercise.noOfMinuites;
+    }
+    for (var equipment in equipmentList) {
+      totalMinutesSpend += equipment.noOfMinuites;
+    }
+
+    return totalMinutesSpend;
+  }
+
+  void markExerciseAsCompleted(int exerciseId) {
+    final exercise = exerciseList.firstWhere(
+      (exercise) => exercise.id == exerciseId,
+    );
+    exercise.isCompleted = true;
+
+    removeExercise(exercise);
+    totalExercieseCompleted++;
+  }
+
+  void markAsHandovered(int equipmentId) {
+    final equipment = equipmentList.firstWhere(
+      (equipment) => equipment.id == equipmentId,
+    );
+    equipment.isHandOvered = true;
+    removeEquipment(equipment);
+    totalEquipmentHandOvered++;
+  }
+
+  double totalCaloriesBurn() {
+    double totalCaloriesBurn = 0;
+
+    for (var equipment in equipmentList) {
+      totalCaloriesBurn += equipment.noOfCalories;
+    }
+
+    if (totalCaloriesBurn > 0 && totalCaloriesBurn <= 10) {
+      totalCaloriesBurn = totalCaloriesBurn / 10;
+    }
+
+    if (totalCaloriesBurn > 10 && totalCaloriesBurn <= 100) {
+      totalCaloriesBurn = totalCaloriesBurn / 100;
+    }
+
+    if (totalCaloriesBurn > 100 && totalCaloriesBurn <= 1000) {
+      totalCaloriesBurn = totalCaloriesBurn / 1000;
+    }
+
+    return totalCaloriesBurn;
+  }
 }

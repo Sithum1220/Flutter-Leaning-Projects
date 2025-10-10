@@ -4,7 +4,7 @@ class ExerciseModel {
   final String exerciseName;
   final String exerciseImageUrl;
   final int noOfMinuites;
-  final bool isCompleted;
+  bool isCompleted;
 
   ExerciseModel({
     required this.id,
@@ -13,5 +13,4 @@ class ExerciseModel {
     required this.noOfMinuites,
     required this.isCompleted,
   });
-  
 }

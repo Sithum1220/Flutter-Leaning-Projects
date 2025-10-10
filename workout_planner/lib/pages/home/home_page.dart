@@ -61,7 +61,10 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                ProgressCard(progressValue: 0.3, total: 100),
+                ProgressCard(
+                  progressValue: userData.totalCaloriesBurn(),
+                  total: 100,
+                ),
                 const SizedBox(height: 20),
                 Text(
                   "Today’s Activity",
